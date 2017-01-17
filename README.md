@@ -56,6 +56,7 @@ done
 ```
 
 ```
+eval "$(docker-machine env swarm-1)"
 docker node ls
 ```
 
