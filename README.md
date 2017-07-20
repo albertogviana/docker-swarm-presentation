@@ -39,7 +39,7 @@ docker service create \
   --publish=8000:8080/tcp \
   --constraint=node.role==manager \
   --mount=type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock \
-  manomarks/visualizer
+  dockersamples/visualizer
 
 open http://$(docker-machine ip swarm-1):8000
 ```
